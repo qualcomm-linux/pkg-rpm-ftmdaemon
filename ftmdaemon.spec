@@ -24,8 +24,6 @@ hardware and firmware during manufacturing and diagnostics.
 %install
 mkdir -p %{buildroot}
 cp -a data/wlanftm/arm64/. %{buildroot}/
-# Install license documents separately with %license.
-rm -f %{buildroot}%{_docdir}/wlanftm/copyright
 find %{buildroot} \( -type f -o -type l \) -printf '/%%P\n' | sort > %{name}.files
 
 %files -f %{name}.files
