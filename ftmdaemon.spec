@@ -27,11 +27,5 @@ find %{buildroot} \( -type f -o -type l \) -printf '/%%P\n' | sort > %{name}.fil
 %files -f %{name}.files
 
 %changelog
-* Wed Aug 26 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-3
-- Switch to official Qualcomm Linux wlanftm release tarball
-
-* Mon Aug 24 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-2
-- Rebuild prebuilt payload from source package with private libdiag.so
-
 * Fri Aug 21 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-1
 - Initial prebuilt RPM packaging
