@@ -24,9 +24,14 @@ hardware and firmware during manufacturing and diagnostics.
 %install
 mkdir -p %{buildroot}
 cp -a data/wlanftm/arm64/. %{buildroot}/
+# Install license documents separately with %license.
+rm -f %{buildroot}%{_docdir}/wlanftm/copyright
 find %{buildroot} \( -type f -o -type l \) -printf '/%%P\n' | sort > %{name}.files
 
 %files -f %{name}.files
+%license data/wlanftm/arm64/usr/share/doc/wlanftm/copyright
+%license data/LICENSE.qcom-2
+%license data/NOTICE
 
 %changelog
 * Fri Aug 21 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-1

@@ -24,6 +24,13 @@ The prebuilt payload installs:
 
 - /usr/bin/ftmdaemon
 
+License documents are installed under `/usr/share/licenses/ftmdaemon/`
+and marked as license files in the RPM:
+
+- `copyright`
+- `LICENSE.qcom-2`
+- `NOTICE`
+
 ## Files
 
 - ftmdaemon.spec
