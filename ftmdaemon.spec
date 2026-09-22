@@ -3,7 +3,7 @@
 Name:           ftmdaemon
 Version:        1.0.0
 Release:        1%{?dist}
-Summary:        Qualcomm WLAN Factory Test Mode daemon
+Summary:        Factory Test Mode daemon for Qualcomm WLAN devices
 
 License:        Qualcomm.nologin.binaries.license
 Source0:        https://qartifactory-edge.qualcomm.com/artifactory/qsc_releases/software/chip/component/wlan-service.qclinux.0.0/260825/prebuilt_resolute/wlanftm_%{version}_arm64.tar.gz
@@ -11,7 +11,9 @@ Source0:        https://qartifactory-edge.qualcomm.com/artifactory/qsc_releases/
 ExclusiveArch:  aarch64
 
 %description
-ftmdaemon is packaged from a Qualcomm Linux release tarball.
+ftmdaemon provides the device-side daemon for Qualcomm WLAN Factory Test
+Mode (FTM). It handles factory test requests used to exercise WLAN
+hardware and firmware during manufacturing and diagnostics.
 
 %prep
 %autosetup -c -n %{name}-%{version}

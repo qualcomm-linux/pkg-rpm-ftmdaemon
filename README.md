@@ -4,6 +4,10 @@ SPDX-License-Identifier: BSD-3-Clause
 -->
 # ftmdaemon RPM - CentOS Stream 10
 
+ftmdaemon provides the device-side daemon for Qualcomm WLAN Factory Test
+Mode (FTM). It handles factory test requests used to exercise WLAN
+hardware and firmware during manufacturing and diagnostics.
+
 This branch contains the CentOS Stream 10 RPM packaging for ftmdaemon from a Qualcomm Linux release tarball.
 
 ## Package
@@ -11,6 +15,7 @@ This branch contains the CentOS Stream 10 RPM packaging for ftmdaemon from a Qua
 | Field | Value |
 |---|---|
 | Package | ftmdaemon |
+| Summary | Factory Test Mode daemon for Qualcomm WLAN devices |
 | Version | 1.0.0 |
 | Source | wlanftm_1.0.0_arm64.tar.gz |
 | Source checksum | See sources |
