@@ -24,6 +24,8 @@ The prebuilt payload installs:
 
 - /usr/bin/ftmdaemon
 
+Runtime dependency: `qcom-libdiag`.
+
 License documents are installed under `/usr/share/licenses/ftmdaemon/`
 and marked as license files in the RPM:
 
