@@ -10,6 +10,8 @@ Source0:        https://qartifactory-edge.qualcomm.com/artifactory/qsc_releases/
 
 ExclusiveArch:  aarch64
 
+Requires:       qcom-libdiag
+
 %description
 ftmdaemon provides the device-side daemon for Qualcomm WLAN Factory Test
 Mode (FTM). It handles factory test requests used to exercise WLAN
