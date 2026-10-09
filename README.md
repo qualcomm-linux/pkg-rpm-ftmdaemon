@@ -8,7 +8,9 @@ ftmdaemon provides the device-side daemon for Qualcomm WLAN Factory Test
 Mode (FTM). It handles factory test requests used to exercise WLAN
 hardware and firmware during manufacturing and diagnostics.
 
-This branch contains the CentOS Stream 10 RPM packaging for ftmdaemon from a Qualcomm Linux release tarball.
+The [`c10s`](https://github.com/qualcomm-linux/pkg-rpm-ftmdaemon/tree/c10s) branch contains the
+CentOS Stream 10 RPM packaging for ftmdaemon from a Qualcomm Linux release tarball.
+Check out that branch to access the spec file and `sources`.
 
 ## Package
 
@@ -51,8 +53,12 @@ Local validation can be run with qcom-rpm-utils:
       --spec ftmdaemon.spec \
       --output /path/to/output
 
-For CI, open a PR against this c10s branch. The build-on-pr workflow builds RPM artifacts but does not publish them.
+For CI, open a PR against the `c10s` branch. The build-on-pr workflow builds RPM artifacts but does not publish them.
 
 ## Release
 
 After the PR is merged, run Actions -> Release on the c10s branch. The release workflow publishes the generated RPMs to Artifactory after approval.
+
+## License
+
+pkg-rpm-ftmdaemon is licensed under the [BSD-3-Clause License](https://spdx.org/licenses/BSD-3-Clause.html). See [LICENSE.txt](LICENSE.txt) for the full license text.
