@@ -2,7 +2,7 @@
 
 Name:           ftmdaemon
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Factory Test Mode daemon for Qualcomm WLAN devices
 
 License:        Qualcomm.nologin.binaries.license
@@ -34,5 +34,8 @@ find %{buildroot} \( -type f -o -type l \) -printf '/%%P\n' | sort > %{name}.fil
 %license data/NOTICE
 
 %changelog
+* Mon Oct 19 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-2
+- Bump release for the qcom-libdiag runtime dependency
+
 * Fri Aug 21 2026 Yu Zhang <yu.zhang@oss.qualcomm.com> - 1.0.0-1
 - Initial prebuilt RPM packaging
